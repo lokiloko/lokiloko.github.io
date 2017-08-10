@@ -3,7 +3,7 @@
 
 # Used Tags & Syntaxes
 
-##  HTML
+###  HTML
   | Tag | Desc |
   | ------ | ------ |
   | head | Title meta section css link |
@@ -13,7 +13,7 @@
   | footer | Footer and copyright |
   | article | Article |
 
-## CSS
+### CSS
   | Tag | Desc |
   | ------ | ------ |
   | Background | Set Background |
