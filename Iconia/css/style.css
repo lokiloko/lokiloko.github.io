@@ -1,0 +1,153 @@
+@import url(http://fonts.googleapis.com/css?family=Muli);
+
+body{
+	font-family: 'Muli', sans-serif;
+}
+
+.headerbg{
+	position:inherit;
+	background:#F1F1F1;
+	background-size:cover;
+	color:#000000;
+	padding:20px;
+	margin-top:50px;
+}
+
+.logo{
+	width:40%;
+	margin-top:20%;
+	z-index:auto;
+}
+
+.badgeappstore{
+	width:40%;
+	margin-top:8%;
+}
+
+.badgeappstore:hover{
+	opacity:0.8;
+}
+
+.mainscreen{
+	width:60%;
+}
+
+
+.section1{
+	padding-top:50px;
+	padding-bottom:50px;
+	padding-left:20px;
+	padding-right:20px;
+	color:#161616;
+}
+
+.screen1{
+	width:70%;
+}
+
+.textsection1{
+	margin-top:30%;
+}
+
+
+.section2{
+	padding-top:50px;
+	padding-bottom:50px;
+	padding-left:20px;
+	padding-right:20px;
+	color:#161616;
+}
+
+.screen2{
+	width:70%;
+}
+
+.textsection2{
+	margin-top:30%;
+}
+
+.supportdiv{
+	background:url('../img/support.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#FFFFFF;
+	padding-top:40px;
+	padding-bottom:40px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.supportdiv button{
+	background:#FFFFFF;
+	color:#fc3232;
+	height:60px;
+	padding:10px;
+	width:80%;
+	border-radius: 80px 80px 80px 80px;
+	-moz-border-radius: 80px 80px 80px 80px;
+	-webkit-border-radius: 80px 80px 80px 80px;
+	margin-top:5%;
+	border:none;
+}
+
+.supportdiv button:hover{
+	background:#fc3232;
+	color:#FFFFFF;
+}
+
+.footer{
+	background:#181818;
+	padding:40px;
+}
+
+.logofooter{
+	width:70%;
+}
+
+/* Media query's adjustement */
+
+
+@media screen and (max-width: 460px) {
+	.logo{
+		width:80%;
+	}
+
+	.badgeappstore{
+		width:80%;
+	}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #F1F1F1;
+  position:fixed;
+  width:100%;
+  z-index:1;
+}
+
+#home{
+	float:left;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background:url('../img/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
