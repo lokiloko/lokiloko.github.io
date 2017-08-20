@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Math Quiz</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+		<!-- Favicon Zone -->
+		<!-- Style & bootstrap import -->
+		<!-- End of inmport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+	<body>
+		<h1>Welcome to Math Quiz</h1>
+		<table border='1' style="float:right;">
+			<tr>
+				<td>Name</td>
+				<td>Score</td>
+			</tr>
+			<tr>
+				<td id="high1name"></td>
+				<td id="high1"></td>
+			</tr>
+			<tr>
+				<td id="high2name"></td>
+				<td id="high2"></td>
+			</tr>
+			<tr>
+				<td id="high3name"></td>
+				<td id="high3"></td>
+			</tr>
+		</table>
+		<div id="intro">
+			<h3>Fill your information first!</h3>
+			<input type="text" id="name" placeholder="Your Name">
+			<button onclick="startGame();">GO!</button>
+		</div>
+		<div id="displayDiv"></div>
+		<div id="main">
+			<input type="text" disabled id="number1" value='0'>
+			<input type="text" disabled id="notation" value='+'>
+			<input type="text" disabled id="number2" value='0'>
+			<input type="text" id="answer" placeholder="answer">
+			<button onclick="checkAnswer();">Submit</button>
+			<p id="benar" style="font-size:16;"></p>
+		</div>
+		<div id="end">
+			<h3>Congrats, You achieved</h3>
+			<p id="score"></p>
+			<button onclick="restartGame();">Play Again</button>
+		</div>
+		
+		<script type="text/javascript" src="myapp.js"></script>
+	</body>
+</html>
