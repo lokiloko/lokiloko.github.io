@@ -156,7 +156,7 @@ function nextQuestion(level){
 		if(symbol === '-'){
 			while(1){
 				if(number2 > number1){
-					number2 = randomNumber(10,20);
+					number2 = randomNumber(100,25);
 				}
 				else{
 					break;
@@ -166,7 +166,7 @@ function nextQuestion(level){
 		else if(symbol === '/'){
 			while(1){
 				if(number1 % number2 !== 0 ){
-					number2 = randomNumber(10,20);
+					number2 = randomNumber(100,25);
 				}
 				else{
 					break;

@@ -1,23 +1,16 @@
 # About This Site
   This is a Math Quiz Page based on JavaScript
-
-# Used Tags & Syntaxes
-
-###  HTML
-  | Tag | Desc |
-  | ------ | ------ |
-  | head | Title meta section css link |
-  | body | Page that displayed on browser |
-  | header | Logo and Navigation |
-  | section | Article and Title |
-  | footer | Footer and copyright |
-  | article | Article |
-
-### CSS
-  | Tag | Desc |
-  | ------ | ------ |
-  | Background | Set Background |
-  | Float | Push element |
+  There are 3 highest score that saved
+  There are 4 kind of level
+	1. Addition or Substraction, random number between 1-10
+	2. Addition, substraction, multiplication or division random number between 1-10
+	3. Addition, substraction, multiplication or division random number between 10-20
+	4. Addition, substraction, multiplication or division random number between 25-125
+	
+## How To Play
+1. Fill your name
+2. Answer the math quiz as fast as you can in 60s
+3. Be the highscore
 
 # About Me
   My Name is Ian Winanto

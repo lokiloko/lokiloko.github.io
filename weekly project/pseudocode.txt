@@ -1,0 +1,73 @@
+Buat variabel "timer";
+Buat variabel "notation" isi dengan notasi aritmatika;
+Buat variabel "person";
+Buat variabel "highscore" isi dengan object null;
+Buat variabel "level";
+Buat function "nextQuestion":
+	IF level < 5 then :
+		do random notation(+ || -);
+		do random dari 0-10 lalu simpan ke number1;
+		IF notation adalah '-' then:
+			do random 0-10 hingga number2 > number1;
+	ELSE IF level < 10 then :		
+		do random notation(+ || -);
+		do random dari 0-10 lalu simpan ke number1;
+		IF notation adalah '-' then:
+			do random 0-10 hingga number2 < number1;
+		ELSE IF notation adalah '/' then:
+			do random 0-10 hingga number1 % number2;
+	ELSE IF level < 15 then :		
+		do random notation(+ || -);
+		do random dari 10-20 lalu simpan ke number1;
+		IF notation adalah '-' then:
+			do random 10-20 hingga number2 < number1;
+		ELSE IF notation adalah '/' then:
+			do random 10-20 hingga number1 % number2;
+	ELSE IF level < 20 then :		
+		do random notation(+ || -);
+		do random dari 10-20 lalu simpan ke number1;
+		IF notation adalah '-' then:
+			do random 10-20 hingga number2 < number1;
+		ELSE IF notation adalah '/' then:
+			do random 10-20 hingga number1 % number2;
+	ELSE	
+		do random notation(+ || -);
+		do random dari 25-125 lalu simpan ke number1;
+		IF notation adalah '-' then:
+			do random 25-125 hingga number2 < number1;
+		ELSE IF notation adalah '/' then:
+			do random 25-125 hingga number1 % number2;
+
+Buat function "checkAnswer":
+	IF answerUser sama dengan realAnswer then:
+		increment level;
+		TAMPILKAN "realAnswer";
+		call nextQuestion();
+	ELSE:
+		call endGame();
+
+		
+Buat function "endGame":
+	TAMPILKAN pesan congratulation;
+	Matikan timer;
+	IF score > highscore then:
+		ubah posisi highscore;
+	TAMPILKAN button "replay";
+	IF button clicked then:
+		TAMPILKAN pesan introduction;
+
+//Main
+Tampilkan pesan introduction;
+Update Highscore;
+
+Terima data nama user;
+IF nama tidak kosong then:
+	simpan ke variabel person.nama;
+	set variabel level sama dengan 0;
+	set timer untuk 60 detik;
+	TAMPILKAN section question;
+	call nextQuestion();
+ELSE
+	TAMPILKAN alert;
+	
+
